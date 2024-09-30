@@ -1,4 +1,4 @@
-// Mailjet Form - Updated August 6, 2024
+// Mailjet Form - Updated September 30, 2024
 function noop() { }
 function run(fn) {
     return fn();
@@ -540,7 +540,7 @@ class SvelteComponent {
 
 function create_fragment(ctx) {
 	let html_tag;
-	let raw_value = `<iframe data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://szwnp.mjt.lu/wgt/szwnp/x5h8/form?c=953d56d1" width="100%" style="height: 0;"></iframe>` + "";
+	let raw_value = `<iframe data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://szwnp.mjt.lu/wgt/szwnp/x5hr/form?c=8870c5ff" width="100%" style="height: 0;"></iframe>` + "";
 	let html_anchor;
 
 	return {
