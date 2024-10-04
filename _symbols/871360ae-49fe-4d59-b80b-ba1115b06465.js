@@ -1,4 +1,4 @@
-// Site Footer - Updated September 30, 2024
+// Site Footer - Updated October 4, 2024
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore
@@ -3004,7 +3004,7 @@ function create_each_block(ctx) {
 			t2 = space();
 			share_button = element("share-button");
 			button = element("button");
-			t3 = text("Share ");
+			t3 = text("Paylaş ");
 			create_component(icon.$$.fragment);
 			t4 = space();
 
@@ -3036,7 +3036,7 @@ function create_each_block(ctx) {
 			var share_button_nodes = children(share_button);
 			button = claim_element(share_button_nodes, "BUTTON", { class: true, href: true });
 			var button_nodes = children(button);
-			t3 = claim_text(button_nodes, "Share ");
+			t3 = claim_text(button_nodes, "Paylaş ");
 			claim_component(icon.$$.fragment, button_nodes);
 			button_nodes.forEach(detach);
 			share_button_nodes.forEach(detach);

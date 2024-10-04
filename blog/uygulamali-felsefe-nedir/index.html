@@ -1,0 +1,487 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <title>Applied Philosophy Association</title><!-- HEAD_svelte-1bph64b_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8"><link rel="icon" type="image/png" sizes="32x32" href="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1722343412225UFD_favicon.svg"><link rel="preconnect" href="https://fonts.bunny.net"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9K3TS78QE"></script><script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q9K3TS78QE');
+</script><script type="module" src="https://www.unpkg.com/@daviddarnes/share-button@1.1.3/share-button.js"></script><meta name="description" content="The Association for Applied Philosophy is a philosophy association founded in Turkey in 2024."><style>/* Reset & standardize default styles */
+@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css") layer;
+
+/* Design tokens (apply to components) */
+:root {
+  --color-primary: #9b8580;
+  --color-primary-light: #e9e2e2;
+  --color-accent: #6371a2;
+  --color-dark: #6c6e83;
+  --color-light: linear-gradient(to bottom, #76a6b5 0%, #ffffff 60%, #cccccc 85%, rgba(0, 0, 0, 0.5) 100%);
+  
+  /* Base values */
+  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  --border-radius: 0;
+  --border-color: #e0e1e1;
+  --transition: 0.1s ease-in-out;
+}
+
+html {
+  font-size: 14px;
+  background: var(--color-light);
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 13px; /* Daha iyi uyum için */
+  }
+}
+
+@media (max-width: 440px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Root element (use instead of body) */
+#page {
+  font-family: 'Merriweather', serif;
+  color: #111;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  background: var(--color-light);
+  max-width: 100%; /* Güncellendi: Tüm genişlikte kullanılabilir */
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Elements */
+.section-container {
+  max-width: 100%; /* Güncellendi: Tüm genişlikte kullanılabilir */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+a.link {
+  line-height: 1.3;
+  border-bottom: 2px solid var(--color-accent);
+  transform: translateY(-2px);
+  transition: border var(--transition);
+}
+
+a.link:hover {
+    border-color: transparent;
+  }
+
+.heading {
+  font-size: 2.5rem;
+  line-height: 1.15;
+}
+
+/* Buttons */
+.button {
+  color: white;
+  background: var(--color-dark);
+  border-radius: 8px;
+  padding: 9px 16px;
+  transition: box-shadow var(--transition);
+  border: 0;
+}
+/* reset */
+@media (max-width: 600px) {
+.button {
+    padding: 6px 12px /* Küçük ekranlarda düğme içeriğini ayarlamak için */
+}
+  }
+.button:hover {
+    box-shadow: 0 0 0 2px var(--color-accent);
+  }
+.button.inverted {
+    background: transparent;
+    color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+  }
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Content Section */
+.content {
+  max-width: 100%; /* Güncellendi: Tüm genişlikte kullanılabilir */
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.content p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+.content img {
+    width: 100%;
+    margin: 2rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+  }
+.content a.link {
+    font-weight: 500;
+    border-bottom: 2px solid var(--color-accent);
+    transform: translateY(-2px);
+    transition: border var(--transition);
+  }
+.content a.link:hover {
+      border-color: transparent;
+    }
+.content h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+.content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+.content h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+.content h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+.content ul {
+    list-style: disc;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+.content ol {
+    list-style: decimal;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+.content blockquote {
+    padding: 2rem;
+    margin: 1.5rem 0;
+    border-left: 5px solid var(--color-accent);
+  }
+
+/* Flex utility */
+.flex {
+  display: flex;
+  flex-wrap: wrap; /* Mobil uyumlu olması için */
+}
+</style><!-- HEAD_svelte-1bph64b_END -->
+      <style>header.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;padding-block:2rem;padding:1rem;margin:1rem;background:radial-gradient(circle at 10% 50%, rgba(85, 107, 47, 0.5) 0%, rgba(189, 183, 107, 0.5) 120%);border-radius:8px;position:relative;box-shadow:0 4px 8px rgba(0, 0, 0, 0.5);z-index:10}@media(max-width: 800px){header.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{padding:0 1rem 1rem;margin:0.3rem
+}}.logo.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{font-size:2.25rem;font-weight:600;line-height:1.2;width:12rem}.logo.svelte-l8sb3e img.svelte-l8sb3e.svelte-l8sb3e{filter:drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7))}.desktop-nav.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:none;align-items:center;justify-content:space-between;width:100%}.desktop-nav.svelte-l8sb3e nav.svelte-l8sb3e.svelte-l8sb3e{display:flex;gap:2rem}.desktop-nav.svelte-l8sb3e nav a.link.svelte-l8sb3e.svelte-l8sb3e{border-color:transparent;transition:border-color 0.1s;font-size:0.95rem;font-weight:300}.desktop-nav.svelte-l8sb3e nav a.link.svelte-l8sb3e.svelte-l8sb3e:hover,.desktop-nav.svelte-l8sb3e nav.svelte-l8sb3e a.link .active.svelte-l8sb3e{border-color:initial}@media(min-width: 800px){.desktop-nav.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex
+}}.subnav-container.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{position:relative}.subnav-container.svelte-l8sb3e button.svelte-l8sb3e.svelte-l8sb3e{white-space:nowrap;font-weight:600}.subnav.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex !important;flex-direction:column;position:absolute;z-index:20;top:100%;background-color:#fff;padding:1em}.mobile-nav.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex;align-items:center;justify-content:space-between;width:100%;font-weight:500}@media(min-width: 800px){.mobile-nav.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:none
+}}.mobile-subnav-title.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{text-align:left;background-color:rgba(0, 0, 0, 0.1);padding:3px 10px}.mobile-subnav.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex;flex-direction:column;align-items:flex-start;gap:1em;margin-bottom:1em}.mobile-subnav.svelte-l8sb3e a.svelte-l8sb3e.svelte-l8sb3e{font-size:0.8em}#popup.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{font-size:1.25rem;display:grid;gap:1rem;position:absolute;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));border-radius:var(--border-radius);inset:0.5rem;bottom:initial;padding:2rem;z-index:1}#popup.svelte-l8sb3e button#close.svelte-l8sb3e.svelte-l8sb3e{position:absolute;right:1rem;top:1rem}.language-picker.svelte-l8sb3e select.svelte-l8sb3e.svelte-l8sb3e{background-color:transparent}.mobile-actions-container.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex;flex-wrap:wrap;justify-content:flex-end;-moz-column-gap:0.5em;column-gap:0.5em;row-gap:0.5em}.lang-swither-mobile.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{vertical-align:top;padding:4px}.top-bar.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{width:100%}ul.socials.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem;justify-content:flex-end;padding-right:15px}@media(max-width: 800px){ul.socials.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{gap:0.3rem
+}}ul.socials.svelte-l8sb3e li.svelte-l8sb3e.svelte-l8sb3e{color:#000;font-size:1.5rem;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:0.1s transform}ul.socials.svelte-l8sb3e li.svelte-l8sb3e.svelte-l8sb3e:hover{transform:scale(1.1)}ul.socials.svelte-l8sb3e li.svelte-l8sb3e a.svelte-l8sb3e{font-size:1.5rem;padding:0.75rem}.search-container.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{margin-left:auto;background-color:#fff;display:flex;align-items:center;border-radius:8px;overflow:hidden;position:relative}.search-container.svelte-l8sb3e .search.svelte-l8sb3e.svelte-l8sb3e{padding:0.4rem 1rem}.hidden.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:none!important}.searchResults.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{position:absolute;background-color:#fff;top:100%;left:0;width:100%}.searchResults.svelte-l8sb3e li.svelte-l8sb3e.svelte-l8sb3e{cursor:pointer;padding:1rem}.searchResults.svelte-l8sb3e li.svelte-l8sb3e.svelte-l8sb3e:hover{background-color:#ddd}
+header.svelte-4f7cpc.svelte-4f7cpc{color:var(--color-white, white);position:relative;overflow:hidden;background:var(--color-background);border-radius:12px}img.svelte-4f7cpc.svelte-4f7cpc{position:absolute;inset:0;height:100%;width:100%;-o-object-fit:cover;object-fit:cover;z-index:0;border-radius:12px}.heading-group.svelte-4f7cpc.svelte-4f7cpc{background:#12121260;display:grid;place-items:center;padding-top:12rem;padding-bottom:12rem;position:relative;gap:1rem;border-radius:12px}@media(max-width: 768px){.heading-group.svelte-4f7cpc.svelte-4f7cpc{padding-top:8rem;padding-bottom:8rem /* Mobilde alt boşluğu azalt */
+}}.buttons.svelte-4f7cpc.svelte-4f7cpc{margin-top:1rem;display:flex;justify-content:center;gap:1rem}.buttons.svelte-4f7cpc .button.svelte-4f7cpc{background:transparent;color:var(--color-inverted);border:1.5px solid white;border-radius:8px;padding:0.5rem 1rem}@media(max-width: 480px){.buttons.svelte-4f7cpc .button.svelte-4f7cpc{padding:0.4rem 0.8rem /* Mobilde buton padding'ini azalt */
+  }}@media(max-width: 480px){}
+.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:2rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:2rem}.teaser.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:1rem}.teaser.text_under_image.svelte-1bbd13f.svelte-1bbd13f{display:flex;flex-direction:column;align-items:center;width:100%}.teaser.text_under_image.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;max-width:900px;min-width:300px;-o-object-fit:contain;object-fit:contain;margin-bottom:1rem;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.text_image_right.svelte-1bbd13f.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f.svelte-1bbd13f{display:flex;align-items:center;justify-content:space-between;width:100%}.teaser.text_image_right.svelte-1bbd13f .image-right.svelte-1bbd13f{order:1;margin-left:1rem;width:50%}.teaser.text_image_left.svelte-1bbd13f .image-left.svelte-1bbd13f{order:0;margin-right:1rem;width:50%}.teaser.text_image_right.svelte-1bbd13f img.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;-o-object-fit:cover;object-fit:cover;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:50%;min-height:300px;text-align:justify;padding:1rem;box-sizing:border-box}.teaser.only_text.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:2rem;font-weight:600;text-align:center}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{line-height:1.5;text-align:justify}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{display:inline-block;padding:10px 20px;background-color:#6371a2;color:white;text-decoration:none;border-radius:5px;font-size:16px;font-weight:600;text-align:center;transition:background-color 0.3s ease;margin-top:1rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f:hover{background-color:#45a049}@media(max-width: 768px){.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:1rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{grid-template-columns:1fr}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:1.5rem}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{font-size:0.9rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{padding:8px 16px;font-size:14px}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:90%}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{min-height:auto}}
+.share-container.svelte-1isqcnz.svelte-1isqcnz{width:100%;display:flex;justify-content:space-between}button.svelte-1isqcnz.svelte-1isqcnz{background-color:var(--color-dark)}footer.svelte-1isqcnz.svelte-1isqcnz{padding-top:2em;color:black;background:radial-gradient(circle at 10% 50%, rgba(85, 107, 47, 0.5) 0%, rgba(189, 183, 107, 0.5) 120%)}.section-container.svelte-1isqcnz.svelte-1isqcnz{display:flex;justify-content:space-between;gap:4rem}@media(max-width: 500px){.section-container.svelte-1isqcnz.svelte-1isqcnz{flex-wrap:wrap}}share-button.svelte-1isqcnz.svelte-1isqcnz{display:inline-block;margin-top:1rem;margin-right:1rem;margin-bottom:1rem}share-button.svelte-1isqcnz button.svelte-1isqcnz{align-items:center;gap:0.2rem;width:auto}.nav-items.svelte-1isqcnz.svelte-1isqcnz{display:flex;flex-wrap:wrap;gap:4rem}.nav-items.svelte-1isqcnz ul.svelte-1isqcnz{display:grid;gap:0.5rem}.nav-items.svelte-1isqcnz h3.svelte-1isqcnz{font-weight:500;font-size:1.5rem;margin-bottom:1rem}ul.socials.svelte-1isqcnz.svelte-1isqcnz{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:0.2rem;justify-content:flex-start;padding-right:15px}@media(max-width: 800px){ul.socials.svelte-1isqcnz.svelte-1isqcnz{gap:0.3rem
+  }}ul.socials.svelte-1isqcnz li.svelte-1isqcnz{color:#000;font-size:1.5rem;display:flex;align-items:center;justify-content:flex-start;border-radius:50%;transition:0.1s transform}ul.socials.svelte-1isqcnz li.svelte-1isqcnz:hover{transform:scale(1.1)}ul.socials.svelte-1isqcnz li a.svelte-1isqcnz{font-size:1.5rem;padding:0 0.75rem 0 0}.mailjet_f{height:220px!important;margin:auto;flex:0 0 310px;width:310px}.rights.svelte-1isqcnz.svelte-1isqcnz{text-align:center;padding-bottom:1rem}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-22ee4674"><header class=" svelte-l8sb3e"><div class="top-bar svelte-l8sb3e"><ul class="socials svelte-l8sb3e"><li class="svelte-l8sb3e"><a href="https://tr.linkedin.com/in/uygulamalifelsefedernegi" aria-label="Linkedin" class="svelte-l8sb3e"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/><!-- HTML_TAG_END --></svg></a>
+    </li><li class="svelte-l8sb3e"><a href="https://x.com/ufelsefeder" aria-label="Twitter" class="svelte-l8sb3e"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"/><!-- HTML_TAG_END --></svg></a>
+    </li><li class="svelte-l8sb3e"><a href="https://www.instagram.com/ufelsefeder/" aria-label="Instagram" class="svelte-l8sb3e"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/><!-- HTML_TAG_END --></svg></a>
+    </li><li class="svelte-l8sb3e"><a href="https://www.youtube.com/@UygulamaliFelsefeDernegi" aria-label="Youtube" class="svelte-l8sb3e"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"/><!-- HTML_TAG_END --></svg></a>
+    </li></ul></div>
+  <div class="desktop-nav svelte-l8sb3e"><a href="/" class="logo svelte-l8sb3e"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1725395182330UFD_LOGO_TR.png" alt="Applied Philosophy Association" class="svelte-l8sb3e"></a>
+    <nav class="svelte-l8sb3e"><div class="subnav-container svelte-l8sb3e"><button type="button" class="svelte-l8sb3e">Information</button>
+                <a class="hidden link svelte-l8sb3e" href="">Information</a>
+              </div><div class="subnav-container svelte-l8sb3e"><button type="button" class="svelte-l8sb3e">Blog</button>
+                <a class="hidden link svelte-l8sb3e" href="/blog">Blog</a>
+              </div><div class="subnav-container svelte-l8sb3e"><button type="button" class="svelte-l8sb3e">Events</button>
+                <a class="hidden link svelte-l8sb3e" href="/announcements">Events</a>
+              </div>
+        <div class="language-picker svelte-l8sb3e"><select class="svelte-l8sb3e"><option value="tr">TR </option><option value="en">EN </option><option value="it">IT </option></select></div></nav></div>
+  <div class="mobile-nav svelte-l8sb3e"><a href="/" class="logo svelte-l8sb3e"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1725395182330UFD_LOGO_TR.png" alt="Applied Philosophy Association" class="svelte-l8sb3e"></a>
+    <div class="mobile-actions-container svelte-l8sb3e"><button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START --><rect width="18" height="2" x="3" y="11" fill="currentColor" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" fill="currentColor" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" fill="currentColor" rx=".95" ry=".95"/><!-- HTML_TAG_END --></svg></button>
+        <button class="lang-swither-mobile svelte-l8sb3e">EN</button></div>
+    </div>
+
+  <div class="flex search-container svelte-l8sb3e"><input class="search svelte-l8sb3e" type="text" placeholder="search" value="">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" style="font-size: 2rem;color: #999; " class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5l-1.5 1.5l-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16A6.5 6.5 0 0 1 3 9.5A6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14S14 12 14 9.5S12 5 9.5 5"/><!-- HTML_TAG_END --></svg></div>
+    </header>
+
+ 
+          </div> 
+<div class="section" id="section-782c19b0"><header class="svelte-4f7cpc"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726150120531WhatsApp%20Image%202024-09-12%20at%2016.42.22.jpeg" alt="" class="svelte-4f7cpc">
+  <div class="heading-group svelte-4f7cpc"><h1 class="heading"></h1>
+    <span class="subheading"></span>
+    <div class="buttons svelte-4f7cpc"></div></div></header></div> 
+<div class="section" id="section-3911c5c2"><section class="section-container svelte-1bbd13f"><div class="teasers svelte-1bbd13f">
+      <div class="teaser text_image_right svelte-1bbd13f">
+
+        <div class="image-right svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726152490659collage-sonnn%20(2).jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Applied Philosophy</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Applied philosophy is a discipline of philosophical thought that aims to provide practical solutions to ethical and social problems encountered in everyday life. By effectively applying this discipline in various fields, our association aims to approach the challenges faced by individuals and societies from a philosophical perspective. Our projects, which range from human rights to social structure, from art to children's education, play an important role in the effort to improve social values and quality of life. Each type of applied philosophy, with its unique approaches, contributes to the integration of ethical and aesthetic values into social life while fulfilling social responsibilities.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_left svelte-1bbd13f">
+
+        <div class="image-left svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726150655952WhatsApp%20Image%202024-09-12%20at%2016.33.00.jpeg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f"></h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Although philosophy is often associated with abstract ideas and theoretical approaches, it also involves thinking about and finding solutions to concrete problems that we encounter in all areas of life. Applied philosophy is the application of theoretical philosophical concepts to various fields such as everyday life, society, politics, ethics, ethics, environment and technology. This discipline aims to understand human life in depth and to use this understanding to solve social problems. One of the most important aspects of applied philosophy is that it shows how abstract concepts can be applied to concrete problems. For example, the philosophy of environmental ethics provides an ethical framework for the study of nature and environmental problems; bioethics examines the moral dimension of difficult decisions in fields such as medicine and biotechnology; philosophy of education evaluates the aims and methods of education from a philosophical perspective.<!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_right svelte-1bbd13f">
+
+        <div class="image-right svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726148356908giris2.jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f"></h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Reminding that philosophical thinking is effective in all areas of life, applied philosophy aims to think critically, make ethical decisions and raise social awareness. Therefore, it is an important tool for understanding and solving the problems faced by individuals and societies by addressing the complex issues of today's world. By transforming theory into practice, applied philosophy shows that philosophy is not only an academic discipline, but also a guide for our lives. The power of applied philosophy comes from its ability to respond to current problems in the world, rather than confining philosophical thought to an abstract domain. The challenges facing individuals and societies today are complex and multidimensional; for example, climate change, biotechnological advances, human rights practices, the implications of artificial intelligence, social injustice and economic inequality, and so on, require in-depth reflection and ethical evaluation.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_left svelte-1bbd13f">
+
+        <div class="image-left svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1725627693720yelpaze.jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f"></h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p><br><br>
+The focus of applied philosophy is spread across a wide range of sub-disciplines that are deepened in different areas. These genres address various aspects of life in a philosophical framework and offer theoretical approaches to develop practical solutions. Below, we discuss the main types of applied philosophy and the issues they address:</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_right svelte-1bbd13f">
+
+        <div class="image-right svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1725627237950etik.png" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Ethics and Applied Ethics</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Ethics and applied ethics is one of the broadest and best-known areas of philosophical thought. This discipline examines how general moral rules apply to specific situations in individual, social and professional life. Ethical problems arise frequently in many fields such as medicine, technology, business, media and law, and applied ethics aims to develop solutions to these problems.
+Medical ethics and bioethics address ethical issues related to the beginning and end of life, organ transplantation, genetic engineering and patient rights. Our association aims to develop research projects and practice guidelines that question ethical boundaries in the field of bioethics. Business ethics, on the other hand, examines making right and fair decisions in the business world and covers issues such as employee rights, environmental responsibility, consumer rights and corporate social responsibility. Workshops and seminars are organized in this area, aiming to raise ethical standards in workplaces. Media ethics explores the ethical rules of information sharing in a digitalized world. In this context, projects and training programs are offered that discuss ethical principles on issues such as media independence, privacy and disinformation.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_left svelte-1bbd13f">
+
+        <div class="image-left svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726150060015cevre.jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Environmental Ethics</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Environmental ethics is a philosophical approach to the relationship between nature and humans and our responsibilities towards the environment. It examines critical issues such as climate change, sustainability, animal rights, environmental pollution and depletion of natural resources. Our association organizes environmental ethics-themed training programs and awareness campaigns for individuals and institutions to increase environmental responsibility. By focusing on the moral value of nature, these projects aim to promote environmentally friendly practices and work towards raising social awareness.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_right svelte-1bbd13f">
+
+        <div class="image-right svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726529172688Leviathan_by_Thomas_Hobbes%20(1).jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Political Philosophy</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Political philosophy offers ideas about how social life should be organized and questions fundamental concepts such as justice, freedom and equality. Applied political philosophy examines the ethical foundations of social policies by applying these concepts to concrete political issues. Our association carries out projects that aim to develop theoretical and practical solutions to current problems such as democracy, human rights, migration policies, poverty and gender equality. These projects include working groups and panel discussions where social policies are evaluated from an ethical perspective.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_left svelte-1bbd13f">
+
+        <div class="image-left svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726528961869Malikaksel.jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Philosophy of Education</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>The philosophy of education discusses in depth how the educational system should be structured, addressing the purpose, methods and content of education. This philosophical approach examines various theories and practices on how education can contribute to the intellectual, moral and social development of individuals. Applied philosophy of education considers the ethical and social aspects of educational decisions and asks how educational policies and practices should be shaped in a just and effective manner.</p>
+<p>Our association develops projects that aim to make the education system more equitable and inclusive and offers various educational programs that aim to increase individuals' critical thinking skills. These projects include seminars, workshops and workshops that address the social role of philosophy of education and the themes of equality in education. We also develop innovative strategies and methods on how applied philosophical approaches to education can have a broader societal impact.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_right svelte-1bbd13f">
+
+        <div class="image-right svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/17265277923731TF13602.jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Philosophy of Technology and Artificial Intelligence</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>In today's rapidly evolving technological world, artificial intelligence (AI), automation and digitalization bring with them many ethical challenges. Technology ethics questions the impact of these rapid changes on human life and seeks to determine the ethical boundaries of these processes. Our association plans to conduct in-depth research on issues such as the ethical use of artificial intelligence and robotics, data privacy and cyber security, and to organize training programs in this field. Our projects aim to address how technology can be used for social good and how potential risks can be managed. We also aim to promote best practices and raise social awareness by examining the ethical and social dimensions of technology in depth. In this context, we plan to organize various seminars, panel discussions and training sessions to ensure the balance between technology and ethics and to ensure that technological developments progress in accordance with human rights and social values.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_left svelte-1bbd13f">
+
+        <div class="image-left svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726149258463magna-carta-hukuk.jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Philosophy of Law</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>The philosophy of law discusses how the concepts of justice, rights and responsibility apply to the legal system. Applied philosophy of law seeks answers to practical questions that examine the compatibility of laws with ethical principles, the achievement of justice and the protection of individual rights. Our association develops projects that examine the practical implications of philosophical debates in areas such as human rights law, criminal law and constitutional law, and organizes seminars and workshops on these topics. These projects ask how ethical principles can play an effective role in maintaining social order.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_right svelte-1bbd13f">
+
+        <div class="image-right svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726150807579halide-edip-adivar-dunyayi-da-kendine-hayran-birakti.png" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Philosophy of Gender</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>The philosophy of gender examines gender inequalities and their reflections in social structures. At the same time, it generates theoretical solutions to the gender inequalities that individuals face in their daily lives and puts these solutions into practice. Our association organizes projects focusing on issues such as women's and men's rights, gender equality and LGBTQ+ rights, as well as gender equality-themed training programs. These projects aim for a more just and egalitarian society by addressing social inequalities.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_left svelte-1bbd13f">
+
+        <div class="image-left svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726151262017Eleanor-Roosevelt-(gold)_en%20(1).jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Philosophy of Human Rights</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>The philosophy of human rights addresses the fundamental rights and freedoms of individuals from an ethical perspective. While this field examines concepts such as justice, equality and human dignity in depth, it also emphasizes social responsibilities. Our association aims to organize various training programs, workshops and seminars to raise awareness on human rights. Our projects will include rights-based advocacy activities, especially for youth and minority groups. These projects aim to provide them with information on human rights and offer solutions to raise social awareness.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_right svelte-1bbd13f">
+
+        <div class="image-right svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726520268988AESTH-ArtHistory.jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Philosophy of Art</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>The philosophy of art questions the meaning of aesthetic experiences and the social role of art. This discipline aims to examine the effects of art not only on individual tastes and emotions, but also on social values and cultural norms. By developing projects that examine art from a philosophical perspective, our association aims to explore the role of art in drawing attention to social problems. In this context, we plan to organize workshops, exhibitions and panels that address the relationship between aesthetics and ethics in collaboration with artists and philosophers. Our projects aim to explore how art can contribute to social change processes and use art as a powerful tool for social awareness and change. We also aim to understand the impact of artistic expressions on social consciousness and ethical understanding by exploring in depth the cultural and social impact of art.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_left svelte-1bbd13f">
+
+        <div class="image-left svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726151359506P4C.jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Philosophy with Children</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Philosophy with children aims to develop children's critical thinking skills and encourage their sense of curiosity. The "4 Cs" of philosophy with children, known as P4C (Philosophy for Children), refers to collaborative, creative, caring and critical thinking approaches. Our association offers workshops and activities based on these methodologies for children to explore philosophical thinking. These methodologies not only support children's intellectual development, but also develop their ability to empathize, collaborate and respect different points of view. We aim to disseminate these pedagogical methods by developing philosophy with children programs for educators. These projects aim to increase children's capacity for philosophical inquiry and deepen their intellectual development.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_right svelte-1bbd13f">
+
+        <div class="image-right svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726151643702dali_salvador_3.jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Philosophy of Old Age</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>The philosophy of gerontology (the science of old age) philosophically addresses the state and processes of old age that arise with aging. It discusses the social roles of elderly individuals and ethical issues. Our association develops projects to support the participation of elderly individuals in social life and carries out awareness-raising activities to transform the social perception in this field. While our projects aim to improve the quality of life of elderly individuals and ensure their integration into society, they will also comprehensively address ethical issues related to old age.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_left svelte-1bbd13f">
+
+        <div class="image-left svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726151810894Bilim_Galileo.jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Philosophy of Science</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>The philosophy of science is a discipline that examines not only the technical but also the ethical and social dimensions of scientific knowledge and methods. This field deeply analyzes the effects of science on social structures and raises important questions about how scientific thinking should be guided within an ethical framework. In this context, our association plans to carry out projects that discuss the effects of scientific thinking on society and aim to build bridges between scientists and the public. In particular, we plan to organize educational programs that will increase the interest of young people in scientific thinking and seminars on the ethical dimension of scientific research. These activities aim to provide participants with knowledge and awareness on how science can be transformed into social benefit and how to deal with the ethical issues of scientific knowledge. Our projects aim to provide solutions on how to make science more meaningful and useful for society by emphasizing how science can be evaluated not only from academic but also from social and ethical perspectives.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_right svelte-1bbd13f">
+
+        <div class="image-right svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726151879223WhatsApp%20Image%202024-09-12%20at%2013.53.21.jpeg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Philosophy of Life</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>The philosophy of life is an approach that aims to help individuals find deeper meaning in their lives and satisfying answers to their existential questions. This philosophical approach encourages individuals to live their lives more consciously and meaningfully, while at the same time strengthening their ability to cope with existential crises. Our association organizes various workshops and group workshops for this purpose. These projects are supported by personal development programs, community philosophical discussions and interactive sessions. Through these activities, participants have the opportunity to explore their inner worlds and develop a deeper understanding of the social context. Thus, we aim to bring depth to the lives of individuals and seek more meaningful answers to existential questions.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser text_image_left svelte-1bbd13f">
+
+        <div class="image-left svelte-1bbd13f"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1726523184154611px-Lunch_atop_a_Skyscraper_-_Charles_Clyde_Ebbets.jpg" alt="" class="svelte-1bbd13f">
+            </div>
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Philosophical Counseling</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Philosophical counseling aims to help individuals find solutions to the ethical and philosophical problems they face in their lives. This service encourages reflection to make sense of complex situations in personal and professional life and to make appropriate decisions. Our association provides philosophical consultancy services at individual and institutional levels, providing guidance in ethical dilemmas and decision-making processes. We also aim to bring philosophical approaches to professional life through ethical consultancy services for the business world. Our projects aim to increase the competencies of individuals and organizations in dealing with ethical and philosophical issues. In this context, our philosophical consultancy services play an important role in providing the necessary intellectual infrastructure for individuals and organizations to make more conscious, ethical and responsible decisions. Our aim is to contribute to the formation of a more robust and ethical mindset at both personal and societal levels.</p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div></div></section></div> 
+<div class="section" id="section-5d321bfe"><footer class="svelte-1isqcnz"><div class="share-container svelte-1isqcnz"></div>
+  <div class="section-container svelte-1isqcnz"><div class="nav-items svelte-1isqcnz"><nav><h3 class="svelte-1isqcnz"></h3>
+           <ul class="socials svelte-1isqcnz"><li class="svelte-1isqcnz"><a class="svelte-1isqcnz"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/><!-- HTML_TAG_END --></svg></a>
+                </li><li class="svelte-1isqcnz"><a class="svelte-1isqcnz"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"/><!-- HTML_TAG_END --></svg></a>
+                </li><li class="svelte-1isqcnz"><a class="svelte-1isqcnz"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"/><!-- HTML_TAG_END --></svg></a>
+                </li><li class="svelte-1isqcnz"><a class="svelte-1isqcnz"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/><!-- HTML_TAG_END --></svg></a>
+                </li></ul>
+             
+              <share-button class="svelte-1isqcnz"><button class="flex button svelte-1isqcnz" href="#ddd">Paylaş <svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 1L8 5h3v9h2V5h3m2 18H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3v2H6v12h12V9h-3V7h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2"/><!-- HTML_TAG_END --></svg></button></share-button>
+            
+            <a class="button" href="/donate">Donation</a>
+        </nav></div>
+    <div class="iframe-container"><!-- HTML_TAG_START --><iframe class="mailjet_f" data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://szwnp.mjt.lu/wgt/szwnp/x5h8/form?c=953d56d1" width="100%" style="height: 0;"></iframe><!-- HTML_TAG_END --></div></div>
+    <div class="rights svelte-1isqcnz"><!-- HTML_TAG_START --><p>Applied Philosophy Association © 2024</p><!-- HTML_TAG_END --></div></footer></div> 
+
+      <script type="module">
+      import('/_symbols/871360ae-49fe-4d59-b80b-ba1115b06465.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-5d321bfe'),
+              hydrate: true,
+              props: {"content":{"html":"<p>Applied Philosophy Association © 2024</p>","markdown":"Association for Applied Philosophy © 2024\n\n"},"menus":[{"links":[{"link":{"url":"/donate","label":"Donation","active":false}}],"title":""}],"social":[{"icon":"mdi:linkedin","link":"Linkedin"},{"icon":"mdi:youtube","link":"Youtube"},{"icon":"mdi:twitter","link":"Twitter"},{"icon":"mdi:instagram","link":"Instagram"}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/8daaf785-06de-42a1-9aa9-96574c3f6412.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-22ee4674'),
+              hydrate: true,
+              props: {"":"","logo":{"image":{"alt":"Applied Philosophy Association","url":"https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1725395182330UFD_LOGO_TR.png"},"title":""},"site_nav":[{"link":{"url":"","label":"Information","active":false},"submenu":[{"link":{"url":"/about-us","label":"About Us","active":false}},{"link":{"url":"/articles-of-association","label":"Charter","active":false}},{"link":{"url":"/executive-board","label":"Board of Directors","active":false}},{"link":{"url":"/our-representations","label":"Our Representative Offices","active":false}},{"link":{"url":"/contact","label":"Contact","active":false}}]},{"link":{"url":"/blog","label":"Blog","active":false},"submenu":[{"link":{"url":"/blog","label":"All Articles","active":false}},{"link":{"url":"blog/applied-philosophy-what-is-it","label":"What is Applied Philosophy?","active":false}},{"link":{"url":"/kitap-nceleme","label":"Book Review","active":false}}]},{"link":{"url":"/announcements","label":"Events","active":false},"submenu":[{"link":{"url":"/seminar","label":"Seminar","active":false}},{"link":{"url":"/symposium","label":"Symposium","active":false}},{"link":{"url":"/speeches","label":"Speeches","active":false}},{"link":{"url":"/workshop","label":"Workshops","active":false}}]}],"social":[{"icon":"mdi:linkedin","link":{"url":"https://tr.linkedin.com/in/uygulamalifelsefedernegi","label":"Linkedin","active":false}},{"icon":"mdi:twitter","link":{"url":"https://x.com/ufelsefeder","label":"Twitter","active":false}},{"icon":"mdi:instagram","link":{"url":"https://www.instagram.com/ufelsefeder/","label":"Instagram","active":false}},{"icon":"mdi:youtube","link":{"url":"https://www.youtube.com/@UygulamaliFelsefeDernegi","label":"Youtube","active":false}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
